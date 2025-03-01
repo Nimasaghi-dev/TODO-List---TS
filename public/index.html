@@ -3,20 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="dist/styles.css">
   <script src="dist/index.js" type="module"></script>
-  <title>todo-list</title>
-  <style>
-    #list {
-      list-style: none;
-      padding: 0;
-    }
-  </style>
+  <title>Todo List</title>
 </head>
 <body>
-  <ul id="list"></ul>
+  <div class="container">
+    <h1>Todo List</h1>
     <form id="new-task-form">
-      <input type="text" id="new-task-title" placeholder="New task">
-      <button type="submit">Add</button>
+      <input type="text" id="new-task-title" placeholder="What needs to be done?">
+      <button type="submit">Add Task</button>
     </form>
+    <ul id="list"></ul>
+  </div>
 </body>
 </html>
